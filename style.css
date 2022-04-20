@@ -1,0 +1,116 @@
+/* declarando uma variável para usar em todo o doc*/
+
+:root{
+    --vermelha: #E50914;
+    --preta: #141414;
+}
+
+/** Quando usamos o asterisco todo o documento é renderizado dentro **/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Principais elementos*/
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+header .container{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;   
+background-color: transparent; 
+}
+header .logo{
+    color: #E50914;
+    text-decoration: none;
+    font-size: 1.8em;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 40px;
+}
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('/img/Principal.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .sinopse{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.filme-principal .titulo{
+    font-family: 'Netflix Sans','Helvetica Neue', Helvetica , Arial, sans-serif;
+    font-size: 35px;
+    margin-top: 15%;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color:black;
+}
+.botao i{
+    margin-right: 8px;
+}
+.container{
+    margin-left: 50px;
+}
+.filme-principal .container{
+    width: 70%;
+}
+
+/*Carrossel*/
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+.carrosel-filmes{
+    margin-top: 0px;
+}
+.carrosel-filmes .classificacao{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+
+    font-family: 'Netflix Sans','Helvetica Neue', Helvetica , Arial, sans-serif;
+    font-size: 15px;
+
+}
